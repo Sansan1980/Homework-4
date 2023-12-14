@@ -163,7 +163,7 @@ public class Main {
         if (teacherIsHappy) {
             System.out.println("Учитель доволен");
         } else {
-            System.out.println(" прячь линейку! ");
+            System.out.println(" Спасайся! Прячь линейку!  ");
 
 
 
