@@ -132,10 +132,26 @@ public class Main {
         С помощью условного оператора и конструкции else напишите программу, которая вычисляет,
         какое из трех чисел бо́льшее, и выводит результат в консоль.
          */
+        int one = 11;
+        int two = 555;
+        int three = 60;
+
+        if (one > two) {
+            if (one > three) {
+                System.out.println(" one > two и three  ");
+            } else {
+                System.out.println(" one и two < three  ");
+            }} else {
+
+
+            if (two > three) {
+                System.out.println(" two > one и three");
+            } else {
+                System.out.println(" two и one < three");
+            }
+        }
 
 /*
-        System.out.println();
-
 
         int a = 25;
         if (a < 20) {
@@ -152,7 +168,7 @@ public class Main {
 
 
         }
-   */
+        */
 
     }
 }
