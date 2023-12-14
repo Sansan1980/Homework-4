@@ -16,9 +16,9 @@ public class Main {
         int ageLyilya = 17;
         if (ageLyilya >= 18) {
             System.out.println("вы совершеннолетний , вам уже " + ageLyilya + " лет ");
-            } else {
-                System.out.println("вы несовершеннолетний , вам еще " + ageLyilya + " лет, нужно немного подождать!");
-            }
+        } else {
+            System.out.println("вы несовершеннолетний , вам еще " + ageLyilya + " лет, нужно немного подождать!");
+        }
 
        /* Задача 2
         Человек одевается в зависимости от температуры воздуха. Напишите программу, которая выводит сообщение:
@@ -31,9 +31,8 @@ public class Main {
         int temperature = 5;
         if (temperature <= 5) {
             System.out.println("На улице холодно, " + temperature + " градусов, нужно надеть шапку  .");
-        }
-        else {
-            System.out.println("Сегодня тепло на улице, "+ temperature +" градусов , можно идти без шапки».");
+        } else {
+            System.out.println("Сегодня тепло на улице, " + temperature + " градусов , можно идти без шапки».");
         }
 
         /*Задача 3
@@ -43,14 +42,14 @@ public class Main {
         При выполнении каждого условия программа должна выводить такое сообщение: «Если скорость …,
         то (вывести в зависимости от результата) придется заплатить штраф / можно ездить спокойно».
          */
-         int imitedSpeed = 60;
-         int actualSpeed = 70;
-         int excessSpeed = actualSpeed - imitedSpeed;
-         if (excessSpeed >= 20){
-             System.out.println( " Ваша скрость " + actualSpeed +" км/ч, превышена на " + excessSpeed +" км/ч, придется заплатить штраф" );
-         }else {
-             System.out.println(" Ваша скрость " + actualSpeed + " км/ч, превышена на " + excessSpeed + " км/ч,  можно ездить спокойно!");
-         }
+        int imitedSpeed = 60;
+        int actualSpeed = 70;
+        int excessSpeed = actualSpeed - imitedSpeed;
+        if (excessSpeed >= 20) {
+            System.out.println(" Ваша скрость " + actualSpeed + " км/ч, превышена на " + excessSpeed + " км/ч, придется заплатить штраф");
+        } else {
+            System.out.println(" Ваша скрость " + actualSpeed + " км/ч, превышена на " + excessSpeed + " км/ч,  можно ездить спокойно!");
+        }
 
        /* Задача 4
         Напишите программу, которая помогает определить, в какое учреждение нужно отправить человека в зависимости от его возраста:
@@ -61,17 +60,17 @@ public class Main {
         При выполнении каждого условия программа должна выводить в консоль сообщение в формате:
         «Если возраст человека равен …, то ему нужно ходить … (в зависимости от возраста дописать нужное)»
         */
-        int ageMan = 40 ;
-        if((ageMan >= 2) & (ageMan <= 6)){
+        int ageMan = 40;
+        if ((ageMan >= 2) & (ageMan <= 6)) {
             System.out.println(" тебе нужно ходить в детский сад. ");
         }
-        if((ageMan >= 7) & (ageMan <= 17)){
+        if ((ageMan >= 7) & (ageMan <= 17)) {
             System.out.println(" тебе нужно ходить в школу. ");
         }
-        if((ageMan >= 17) & (ageMan <= 24)){
+        if ((ageMan >= 17) & (ageMan <= 24)) {
             System.out.println(" тебе нужно ходить в  университет. ");
         }
-        if (ageMan >24 ){
+        if (ageMan > 24) {
             System.out.println(" тебе нужно ходитm на работу и учиться на программиста java!");
         }
 
@@ -88,12 +87,41 @@ public class Main {
         то ему … (в зависимости от возраста дописать нужное: нельзя кататься на аттракционе,
         можно кататься на аттракционе в сопровождении / без сопровождения взрослого)».
          */
+        int age = 15;
+        if (age < 5) {
+            System.out.println(" Если возраст ребенка равен " + age + " нельзя кататься на аттракционе");
+        }
+        if ((age > 5) & (age < 14)) {
+            System.out.println(" Если возраст ребенка равен  + " + age + " можно кататься на аттракционе в сопровождении взрослого. Если взрослого нет, то кататься нельзя.");
+        }
+        if (age > 14){
+            System.out.println("Если возраст ребенка равен "  +  age +  " можно кататься на аттракционе без сопровождения взрослого.");
+        }
+
+
         /*
         Задача 6
         Вместимость одного вагона поезда — 102 человека. Вагон рассчитан на 60 сидячих мест, все остальные — стоячие.
         С помощью условного оператора и конструкции else напишите программу, которая выводит в консоль сообщение о том,
         есть ли место в вагоне, сидячее или стоячее, или вагон уже полностью забит.
          */
+        int numberPeople = 0;
+        int sittingPlace = 60;
+        int totalCapacity = 102;
+        int standingPlace = totalCapacity - sittingPlace;
+        int availableSeats =  totalCapacity - numberPeople;
+        if (availableSeats > standingPlace){
+        int  freeSittingPlace = availableSeats - standingPlace;
+
+            System.out.println(" в вагоне свободных мест "+ availableSeats + " Свободных сидячих мест - " + freeSittingPlace + " . Свободных стоячих мест - " + standingPlace);
+        }
+        if (availableSeats <= standingPlace){
+            int  freeStandingPlace = availableSeats;
+            int  freeSittingPlace = 0;
+            System.out.println(" в вагоне свободных мест "+ availableSeats + " Свободных сидячих мест - " + freeSittingPlace + " . Свободных стоячих мест - " + freeStandingPlace);
+        }
+
+
         /*
         Задача 7
         Даны три числа:
@@ -128,6 +156,3 @@ public class Main {
 
     }
 }
-
-
-
