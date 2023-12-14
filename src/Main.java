@@ -151,7 +151,7 @@ public class Main {
             }
         }
 
-/*
+        // " Бой с тенью !!"
 
         int a = 25;
         if (a < 20) {
@@ -168,7 +168,7 @@ public class Main {
 
 
         }
-        */
+
 
     }
 }
